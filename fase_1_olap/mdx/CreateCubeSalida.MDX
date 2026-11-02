@@ -1,0 +1,20 @@
+CREATE GLOBAL CUBE[MyCube]
+STORAGE 'C:\Temp\CUBESALIDA.cub' FROM [CubeSalida](
+MEASURE [CubeSalida].[Cantidad],
+MEASURE [CubeSalida].[Contar Folio],
+MEASURE [CubeSalida].[Fact Salida Count],
+MEASURE [CubeSalida].[Precio],
+MEASURE [CubeSalida].[Total],
+MEASURE [CubeSalida].[Total D],
+MEASURE [CubeSalida].[Total Descuento],
+MEASURE [CubeSalida].[Total Descuento D],
+MEASURE [CubeSalida].[Total I Impuesto],
+MEASURE [CubeSalida].[Total I Impuesto D],
+MEASURE [CubeSalida].[Total Importe],
+MEASURE [CubeSalida].[Total Importe D],
+DIMENSION [CubeSalida].[Dim Articulo],
+DIMENSION [CubeSalida].[Dim Cliente],
+DIMENSION [CubeSalida].[Dim Salida],
+DIMENSION [CubeSalida].[Dim Time],
+DIMENSION [CubeSalida].[Dim Vendedor]
+);
